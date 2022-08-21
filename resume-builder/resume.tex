@@ -1,0 +1,206 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[9pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Cyril Garcia}}
+
+(408) 440-6918 \ \textbullet
+\ \ me@bycyril.com\ \ \textbullet
+\ \ ByCyril.com
+
+\ \ twitter.com/\_bycyril \ \textbullet
+\ \ github.com/bycyril \ \textbullet
+\ \ linkedin.com/in/bycyril
+\end{center}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Experience}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{Apple Inc.}}
+		{\textbf{Cupertino, CA}}
+	\\
+	\headerrow
+		{\emph{iOS Software Engineer}}
+		{\emph{August 2021 -- Present}}
+	\begin{itemize*}
+		\item Springboard Multitasking.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{SiriusXM}}
+		{\textbf{Oakland, CA}}
+	\\
+	\headerrow
+		{\emph{iOS Software Engineer Intern}}
+		{\emph{June 2020 -- August 2020}}
+	\begin{itemize*}
+		\item Responsible for improving and updating video ad frameworks for iOS.
+		\item Enhanced video ad experience with a skip countdown.
+		\item Adopted new internal A/B testing framework.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Pandora Media}}
+		{\textbf{Oakland, CA}}
+	\\
+	\headerrow
+		{\emph{iOS Software Engineer Intern}}
+		{\emph{June 2019 - August 2019}}
+	\begin{itemize*}
+		\item Responsible for developing and designing a feature to enhance the users ad experience.
+		\item Developed various solutions for on-device speech recognition using KeenASR, OpenEars, and SFSpeechRecognizer.
+		\item Developed extensive unit tests for ad features.
+	\end{itemize*}
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Technical Presentations}
+
+\begin{itemize}
+	\parskip=0.1em
+	\item
+	\headerrow
+		{\textbf{Introduction to Deep Learning with TensorFlow}}
+		{\textbf{WomenWhoCode - Mobile}}
+	\\
+	\headerrow
+		{A deep dive into the inner workings of a neural network and TensorFlow}
+		{\emph{May 2021}}
+	\item
+	\headerrow
+		{\textbf{Swift and Machine Learning}}
+		{\textbf{Spring into Swift}}
+	\\
+	\headerrow
+		{Two separate talks on Swift and CoreML}
+		{\emph{April 2021}}
+	\item
+	\headerrow
+		{\textbf{A Conversation about iOS Development}}
+		{\textbf{Headless \{ Creators \}}}
+	\\
+	\headerrow
+		{Had the opportunity to be a guest speaker on a podcast episode to talk about iOS Development}
+		{\emph{October 2020}}
+	\item
+	\headerrow
+		{\textbf{Machine Learning for iOS}}
+		{\textbf{Silicon Valley Code Camp}}
+	\\
+	\headerrow
+		{An introductory presentation on Machine Learning for iOS Developers}
+		{\emph{September 2019}}
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Projects}
+
+\begin{itemize}
+	\parskip=0.1em
+	\item {\textbf{GeekWeather}} \hfill
+	{\emph{URLSession, Cocoapods, SwiftUI, Swift, UIKit, Widgets, MVC}}
+	\item {\textbf{SOS Board Game}} \hfill
+	{\emph{Swift, MVVM, Firebase, AI, Cocoapods, UIKit}}
+	\item {\textbf{FileStorks}} \hfill
+	{\emph{Swift, Firebase, UIKit, MVC}}
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{San Jose State University}}
+		{\textbf{San Jose, CA}}
+	\\
+	\headerrow
+		{\emph{B.S. Statistics}}
+		{\emph{May 2021}}
+	\item
+	\headerrow
+		{\textbf{Evergreen Valley College}}
+		{\textbf{San Jose, CA}}
+	\\
+	\headerrow
+		{\emph{A.S. Mathematics}}
+		{\emph{May 2018}}
+
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Technical Skills}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Programming Languages:]
+	Swift, Objective-C, Javascript, Python
+	\item[Frameworks:]
+	UIKit, SwiftUI, Vision, CoreML, Foundation, XCTest
+	\item[Tools:]
+	Xcode, Sketch, Sublime, VS Code
+	\item[Interests:]
+	iOS Engineering, Programming design and architecture, UI/UX, machine learning theory
+\end{description*}
+\end{indentsection}
+
+\end{document}
