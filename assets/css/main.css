@@ -4273,18 +4273,50 @@ body.is-touch #banner {
     padding: 0;
   }
 }
+.SectionCard{
+  background-color: white;
+  width: 40vh;
+  height: 40vh;
+  border-radius: 5%;
+  display:block;
+}
+
+.companyLogoView{
+  height: 40%;
+  width: 100%;
+  background-color: red;
+}
 
 .companyLogo{
-  height: 100px;
-  width: 100px;
-  border-radius: 50px;
-  display: flex;
+  height: 100%;
+  width: 100%;
+  /* border-radius: 50px; */
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   background-color: rgba(0,0,0,0);
   overflow: hidden;
 }
+
 .companyLogoImg{
-  
+  width: 60%;
+  height: 25%;
+  object-fit: contain;
+}
+.projectCardDiv{
+  width: 20rem;
+  height: 35rem;
+  background-color: rgba(50,50,50,0.9);
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 0;
+  margin-bottom: 5rem;
+}
+.projectCardImg{
   width: 100%;
+  height: 40%;
+  /* object-fit: contain; */
+}
+a{
+  font-weight: bold;
 }
